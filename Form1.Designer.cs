@@ -62,9 +62,10 @@
             this.lblUser.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblUser.Location = new System.Drawing.Point(118, 134);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(102, 25);
+            this.lblUser.Size = new System.Drawing.Size(79, 25);
             this.lblUser.TabIndex = 12;
-            this.lblUser.Text = "Username";
+            this.lblUser.Text = "Usuario";
+            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
             // 
             // txtUser
             // 
@@ -74,6 +75,7 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(337, 30);
             this.txtUser.TabIndex = 13;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // txtPass
             // 
@@ -154,7 +156,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(113, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(96, 74);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(593, 312);
             this.pictureBox1.TabIndex = 20;
