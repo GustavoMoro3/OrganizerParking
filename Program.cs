@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OrganizerParking
-    //teste so pra verwqwwas
 {
     static class Program
     {
@@ -20,7 +19,7 @@ namespace OrganizerParking
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             //Marhcaaaaaaaaa
-            //mamama
+            //mamamasasa
         }
     }
 }
