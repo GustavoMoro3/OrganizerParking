@@ -8,7 +8,6 @@ namespace OrganizerParking
 {
     static class Program
     {
-        //
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
@@ -18,8 +17,6 @@ namespace OrganizerParking
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            //f
-
         }
     }
 }
