@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OrganizerParking
+    //teste so pra verwqww
 {
     static class Program
     {
@@ -14,6 +15,7 @@ namespace OrganizerParking
         [STAThread]
         static void Main()
         {
+            //SBASBABSABSAS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
