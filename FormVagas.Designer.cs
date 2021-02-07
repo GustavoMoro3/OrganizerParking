@@ -1,6 +1,6 @@
 ﻿namespace OrganizerParking
 {
-    partial class Form4
+    partial class FormVagas
     {
         /// <summary>
         /// Required designer variable.

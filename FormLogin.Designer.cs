@@ -1,6 +1,6 @@
 ﻿namespace OrganizerParking
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.label5 = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MV Boli", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(218, 62);
+            this.label5.Location = new System.Drawing.Point(220, 62);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(410, 62);
             this.label5.TabIndex = 11;
@@ -68,7 +68,7 @@
             this.lblUser.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblUser.Location = new System.Drawing.Point(139, 191);
+            this.lblUser.Location = new System.Drawing.Point(180, 192);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(79, 25);
             this.lblUser.TabIndex = 12;
@@ -79,7 +79,7 @@
             // 
             this.txtUser.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(276, 191);
+            this.txtUser.Location = new System.Drawing.Point(299, 191);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(337, 30);
             this.txtUser.TabIndex = 13;
@@ -89,7 +89,7 @@
             // 
             this.txtPass.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(276, 248);
+            this.txtPass.Location = new System.Drawing.Point(299, 248);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(337, 30);
             this.txtPass.TabIndex = 14;
@@ -100,11 +100,12 @@
             this.lblPass.BackColor = System.Drawing.Color.Transparent;
             this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPass.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblPass.Location = new System.Drawing.Point(118, 253);
+            this.lblPass.Location = new System.Drawing.Point(184, 254);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(109, 25);
+            this.lblPass.Size = new System.Drawing.Size(70, 25);
             this.lblPass.TabIndex = 15;
-            this.lblPass.Text = "Passaword";
+            this.lblPass.Text = "Senha";
+            this.lblPass.Click += new System.EventHandler(this.lblPass_Click);
             // 
             // lbEsqueciSenha
             // 
@@ -113,7 +114,7 @@
             this.lbEsqueciSenha.BackColor = System.Drawing.Color.Transparent;
             this.lbEsqueciSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEsqueciSenha.LinkColor = System.Drawing.Color.Red;
-            this.lbEsqueciSenha.Location = new System.Drawing.Point(371, 281);
+            this.lbEsqueciSenha.Location = new System.Drawing.Point(394, 281);
             this.lbEsqueciSenha.Name = "lbEsqueciSenha";
             this.lbEsqueciSenha.Size = new System.Drawing.Size(128, 15);
             this.lbEsqueciSenha.TabIndex = 16;
@@ -124,7 +125,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(332, 311);
+            this.btnLogin.Location = new System.Drawing.Point(355, 311);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(193, 46);
             this.btnLogin.TabIndex = 17;
@@ -138,11 +139,11 @@
             this.lblRegister.BackColor = System.Drawing.Color.Transparent;
             this.lblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegister.ForeColor = System.Drawing.Color.Black;
-            this.lblRegister.Location = new System.Drawing.Point(314, 371);
+            this.lblRegister.Location = new System.Drawing.Point(358, 366);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(96, 15);
+            this.lblRegister.Size = new System.Drawing.Size(100, 15);
             this.lblRegister.TabIndex = 18;
-            this.lblRegister.Text = "Not Registered?";
+            this.lblRegister.Text = "Não Registrado?";
             this.lblRegister.Click += new System.EventHandler(this.label2_Click);
             // 
             // lbCreateAccount
@@ -152,19 +153,20 @@
             this.lbCreateAccount.DisabledLinkColor = System.Drawing.Color.Red;
             this.lbCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCreateAccount.LinkColor = System.Drawing.Color.Red;
-            this.lbCreateAccount.Location = new System.Drawing.Point(416, 371);
+            this.lbCreateAccount.Location = new System.Drawing.Point(460, 366);
             this.lbCreateAccount.Name = "lbCreateAccount";
-            this.lbCreateAccount.Size = new System.Drawing.Size(109, 15);
+            this.lbCreateAccount.Size = new System.Drawing.Size(88, 15);
             this.lbCreateAccount.TabIndex = 19;
             this.lbCreateAccount.TabStop = true;
-            this.lbCreateAccount.Text = "Create  An Account";
+            this.lbCreateAccount.Text = "Crie sua conta!";
+            this.lbCreateAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbCreateAccount_LinkClicked);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(109, 127);
+            this.pictureBox1.Location = new System.Drawing.Point(129, 127);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(593, 312);
             this.pictureBox1.TabIndex = 20;
@@ -233,7 +235,7 @@
             this.ckeEmpresa.BackColor = System.Drawing.Color.Transparent;
             this.ckeEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ckeEmpresa.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.ckeEmpresa.Location = new System.Drawing.Point(515, 154);
+            this.ckeEmpresa.Location = new System.Drawing.Point(538, 154);
             this.ckeEmpresa.Name = "ckeEmpresa";
             this.ckeEmpresa.Size = new System.Drawing.Size(67, 17);
             this.ckeEmpresa.TabIndex = 22;
@@ -244,7 +246,7 @@
             // 
             this.ckeColaborador.AutoSize = true;
             this.ckeColaborador.BackColor = System.Drawing.Color.Transparent;
-            this.ckeColaborador.Location = new System.Drawing.Point(604, 154);
+            this.ckeColaborador.Location = new System.Drawing.Point(627, 154);
             this.ckeColaborador.Name = "ckeColaborador";
             this.ckeColaborador.Size = new System.Drawing.Size(83, 17);
             this.ckeColaborador.TabIndex = 23;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OrganizerParking
 {
-    public partial class Form2 : Form
+    public partial class FormTelaPrincipal : Form
     {
-        public Form2()
+        public FormTelaPrincipal()
         {
             InitializeComponent();
         }
@@ -65,7 +65,7 @@ namespace OrganizerParking
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<Form3>();
+            AbrirFormNoPanel<FormPerfil>();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -80,13 +80,13 @@ namespace OrganizerParking
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<Form4>();
+            AbrirFormNoPanel<FormVagas>();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            Form1 f1 = new Form1();
+            FormTelaPrincipal f2 = new FormTelaPrincipal();
+            FormLogin f1 = new FormLogin();
             f1.Show();
             this.Close();
             f2.FindForm();
@@ -99,7 +99,7 @@ namespace OrganizerParking
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<Form5>();
+            AbrirFormNoPanel<FormCarona>();
         }
     }
 }

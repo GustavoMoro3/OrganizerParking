@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OrganizerParking
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace OrganizerParking
             if (ckeColaborador.Checked)
             {
                 Form f1 = new Form();
-                Form2 f2 = new Form2();
+                FormTelaPrincipal f2 = new FormTelaPrincipal();
                 f2.Show();
                 f1 = FindForm();
                 f1.Hide();
@@ -35,14 +35,14 @@ namespace OrganizerParking
             else if(ckeEmpresa.Checked)
             {
                 Form f1 = new Form();
-                Form6 f6 = new Form6();
+                FormEmpresa f6 = new FormEmpresa();
                 f6.Show();
                 f1 = FindForm();
                 f1.Hide();
             }
             else
             {
-                MessageBox.Show("Marque alguma CheckBox");
+                MessageBox.Show("Marque entre Colaborador e Empresa");
             }
            
                 
@@ -78,6 +78,16 @@ namespace OrganizerParking
             this.WindowState = FormWindowState.Normal;
             btnRestaurar.Visible = false;
             btnMaximizar.Visible = true;
+        }
+
+        private void lblPass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbCreateAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OrganizerParking
 {
-    public partial class Form6 : Form
+    public partial class FormEmpresa : Form
     {
-        public Form6()
+        public FormEmpresa()
         {
             InitializeComponent();
         }
