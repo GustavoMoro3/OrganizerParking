@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace OrganizerParking
 {
@@ -17,6 +19,10 @@ namespace OrganizerParking
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormLogin());
+
+            SqlConnection conn = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\suporte\Source\Repos\Gustavolego41\OrganizerParking\Database1.mdf; Integrated Security = True");
+
+
         }
     }
 }
