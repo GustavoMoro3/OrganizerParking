@@ -32,7 +32,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
             this.lblPass = new System.Windows.Forms.Label();
             this.lbEsqueciSenha = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.ckeEmpresa = new System.Windows.Forms.CheckBox();
             this.ckeColaborador = new System.Windows.Forms.CheckBox();
+            this.txtPass = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,15 +84,6 @@
             this.txtUser.Size = new System.Drawing.Size(337, 30);
             this.txtUser.TabIndex = 13;
             this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
-            // 
-            // txtPass
-            // 
-            this.txtPass.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(299, 248);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(337, 30);
-            this.txtPass.TabIndex = 14;
             // 
             // lblPass
             // 
@@ -253,13 +244,24 @@
             this.ckeColaborador.Text = "Colaborador";
             this.ckeColaborador.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // txtPass
+            // 
+            this.txtPass.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(299, 248);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(337, 30);
+            this.txtPass.TabIndex = 24;
+            this.txtPass.UseSystemPasswordChar = true;
+            // 
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OrganizerParking.Properties.Resources.azzolinadvogados_com_br_responsabilidade_fornecedor_veiculos_no_estacionamento_3375_01;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(845, 472);
+            this.Controls.Add(this.txtPass);
             this.Controls.Add(this.ckeColaborador);
             this.Controls.Add(this.ckeEmpresa);
             this.Controls.Add(this.panel1);
@@ -267,14 +269,13 @@
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lbEsqueciSenha);
-            this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblPass);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "FormLogin";
             this.Text = "Organizer Parking";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -288,7 +289,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.LinkLabel lbEsqueciSenha;
         private System.Windows.Forms.Button btnLogin;
@@ -301,6 +301,7 @@
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.CheckBox ckeEmpresa;
         private System.Windows.Forms.CheckBox ckeColaborador;
+        private System.Windows.Forms.MaskedTextBox txtPass;
     }
 }
 

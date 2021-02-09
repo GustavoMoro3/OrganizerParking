@@ -41,7 +41,7 @@ namespace OrganizerParking
 
                 while (dr.Read())
                 {
-                    if (Convert.ToString(dr["Usuario"]) == txtUser.Text || Convert.ToString(dr["Senha"])==txtPass.Text)
+                    if (Convert.ToString(dr["Usuario"]) == txtUser.Text && Convert.ToString(dr["Senha"])==txtPass.Text)
                     {
                        
                         Form f1 = new Form();
@@ -60,11 +60,30 @@ namespace OrganizerParking
             }
             else if(ckeEmpresa.Checked)
             {
-                Form f1 = new Form();
-                FormEmpresa f6 = new FormEmpresa();
-                f6.Show();
-                f1 = FindForm();
-                f1.Hide();
+                conn.Open();
+                string select = $"SELECT * FROM Cadastro";
+                cmd = new SqlCommand(select, conn);
+                SqlDataReader dr;
+
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    if (Convert.ToString(dr["Usuario"]) == txtUser.Text && Convert.ToString(dr["Senha"]) == txtPass.Text)
+                    {
+                        Form f1 = new Form();
+                        FormEmpresa f6 = new FormEmpresa();
+                        f6.Show();
+                        f1 = FindForm();
+                        f1.Hide();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuário ou Senha Inválidos");
+                    }
+                }
+                conn.Close();
             }
             else
             {
@@ -76,21 +95,7 @@ namespace OrganizerParking
 
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
-            conn.Open();
-            string select = $"SELECT * FROM Cadastro";
-            cmd = new SqlCommand(select, conn);
-            SqlDataReader dr;
-            
-            dr = cmd.ExecuteReader();
-
-            while (dr.Read()) 
-            {
-                if (Convert.ToString(dr["Usuario"]) == txtUser.Text) 
-                {
-                    
-                }
-            }
-            conn.Close();
+           
         }
 
         private void lblUser_Click(object sender, EventArgs e)
