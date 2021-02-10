@@ -181,7 +181,7 @@
             this.btnPerfil.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerfil.ForeColor = System.Drawing.Color.Black;
             this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPerfil.Location = new System.Drawing.Point(0, 88);
+            this.btnPerfil.Location = new System.Drawing.Point(3, 69);
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(200, 39);
             this.btnPerfil.TabIndex = 7;
