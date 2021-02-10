@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.Perfil = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // Perfil
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(259, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 38);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Perfil";
+            this.Perfil.AutoSize = true;
+            this.Perfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Perfil.Location = new System.Drawing.Point(259, 31);
+            this.Perfil.Name = "Perfil";
+            this.Perfil.Size = new System.Drawing.Size(91, 38);
+            this.Perfil.TabIndex = 1;
+            this.Perfil.Text = "Perfil";
             // 
-            // Form3
+            // FormPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(642, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Perfil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form3";
+            this.Name = "FormPerfil";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
@@ -59,6 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Perfil;
     }
 }

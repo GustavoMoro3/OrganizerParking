@@ -22,12 +22,13 @@ namespace OrganizerParking
         {
             InitializeComponent();
         }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
+
+        //Verificar e Executar o Login
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (ckeColaborador.Checked)
@@ -41,9 +42,8 @@ namespace OrganizerParking
 
                 while (dr.Read())
                 {
-                    if (Convert.ToString(dr["Usuario"]) == txtUser.Text && Convert.ToString(dr["Senha"])==txtPass.Text)
-                    {
-                       
+                    if (Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"])==txtPass.Text)
+                    {            
                         Form f1 = new Form();
                         FormTelaPrincipal f2 = new FormTelaPrincipal();
                         f2.Show();
@@ -55,8 +55,7 @@ namespace OrganizerParking
                         MessageBox.Show("Usuário ou Senha Inválidos");
                     }
                 }
-                conn.Close();
-                
+                conn.Close();              
             }
             else if(ckeEmpresa.Checked)
             {
@@ -69,14 +68,13 @@ namespace OrganizerParking
 
                 while (dr.Read())
                 {
-                    if (Convert.ToString(dr["Usuario"]) == txtUser.Text && Convert.ToString(dr["Senha"]) == txtPass.Text)
+                    if (Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"]) == txtPass.Text)
                     {
                         Form f1 = new Form();
                         FormEmpresa f6 = new FormEmpresa();
                         f6.Show();
                         f1 = FindForm();
                         f1.Hide();
-
                     }
                     else
                     {
@@ -88,25 +86,9 @@ namespace OrganizerParking
             else
             {
                 MessageBox.Show("Marque entre Colaborador e Empresa");
-            }
-           
-                
+            }                
         }
 
-        private void txtUser_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void lblUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -125,12 +107,17 @@ namespace OrganizerParking
             btnMaximizar.Visible = true;
         }
 
-        private void lblPass_Click(object sender, EventArgs e)
+
+        //Criar conta 
+        private void lbCreateAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
 
-        private void lbCreateAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+
+
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

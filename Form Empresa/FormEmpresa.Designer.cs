@@ -1,6 +1,6 @@
 ﻿namespace OrganizerParking
 {
-    partial class FormTelaPrincipal
+    partial class FormEmpresa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTelaPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmpresa));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblOrganizerParking = new System.Windows.Forms.Label();
             this.btnRestaurar = new System.Windows.Forms.Button();
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnFuncionario = new System.Windows.Forms.Button();
+            this.btnEstacionamento = new System.Windows.Forms.Button();
+            this.btnPerfil = new System.Windows.Forms.Button();
             this.panelConteudo = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -47,7 +47,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblOrganizerParking);
             this.panel1.Controls.Add(this.btnRestaurar);
             this.panel1.Controls.Add(this.btnMaximizar);
             this.panel1.Controls.Add(this.btnFechar);
@@ -55,17 +55,17 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 37);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
             // 
-            // label2
+            // lblOrganizerParking
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 25);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Organizer Parking";
+            this.lblOrganizerParking.AutoSize = true;
+            this.lblOrganizerParking.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrganizerParking.Location = new System.Drawing.Point(12, 9);
+            this.lblOrganizerParking.Name = "lblOrganizerParking";
+            this.lblOrganizerParking.Size = new System.Drawing.Size(186, 25);
+            this.lblOrganizerParking.TabIndex = 5;
+            this.lblOrganizerParking.Text = "Organizer Parking";
             // 
             // btnRestaurar
             // 
@@ -116,79 +116,76 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btnClientes);
+            this.panel2.Controls.Add(this.btnFuncionario);
+            this.panel2.Controls.Add(this.btnEstacionamento);
+            this.panel2.Controls.Add(this.btnPerfil);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 37);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 413);
-            this.panel2.TabIndex = 1;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 329);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 39);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Sair";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 187);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 96);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Carona Solidaria";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.panel2.TabIndex = 8;
             // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 132);
+            this.button1.Location = new System.Drawing.Point(0, 294);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 49);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Vagas";
+            this.button1.Size = new System.Drawing.Size(200, 39);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnClientes
+            // btnFuncionario
             // 
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.Black;
-            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 67);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(200, 39);
-            this.btnClientes.TabIndex = 1;
-            this.btnClientes.Text = "Perfil";
-            this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            this.btnFuncionario.FlatAppearance.BorderSize = 0;
+            this.btnFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.btnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFuncionario.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncionario.ForeColor = System.Drawing.Color.Black;
+            this.btnFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFuncionario.Location = new System.Drawing.Point(3, 222);
+            this.btnFuncionario.Name = "btnFuncionario";
+            this.btnFuncionario.Size = new System.Drawing.Size(200, 39);
+            this.btnFuncionario.TabIndex = 9;
+            this.btnFuncionario.Text = "Funcionário";
+            this.btnFuncionario.UseVisualStyleBackColor = true;
+            // 
+            // btnEstacionamento
+            // 
+            this.btnEstacionamento.FlatAppearance.BorderSize = 0;
+            this.btnEstacionamento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.btnEstacionamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstacionamento.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstacionamento.ForeColor = System.Drawing.Color.Black;
+            this.btnEstacionamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstacionamento.Location = new System.Drawing.Point(0, 149);
+            this.btnEstacionamento.Name = "btnEstacionamento";
+            this.btnEstacionamento.Size = new System.Drawing.Size(200, 39);
+            this.btnEstacionamento.TabIndex = 8;
+            this.btnEstacionamento.Text = "Estacionamento";
+            this.btnEstacionamento.UseVisualStyleBackColor = true;
+            // 
+            // btnPerfil
+            // 
+            this.btnPerfil.FlatAppearance.BorderSize = 0;
+            this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerfil.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerfil.ForeColor = System.Drawing.Color.Black;
+            this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPerfil.Location = new System.Drawing.Point(0, 88);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(200, 39);
+            this.btnPerfil.TabIndex = 7;
+            this.btnPerfil.Text = "Perfil";
+            this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // panelConteudo
             // 
@@ -197,21 +194,20 @@
             this.panelConteudo.Location = new System.Drawing.Point(200, 37);
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(600, 413);
-            this.panelConteudo.TabIndex = 3;
-            this.panelConteudo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelConteudo_Paint);
+            this.panelConteudo.TabIndex = 9;
             // 
-            // FormTelaPrincipal
+            // FormEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelConteudo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormTelaPrincipal";
-            this.Text = "Organizer Parking";
+            this.Name = "FormEmpresa";
+            this.Text = "Form6";
+            this.Load += new System.EventHandler(this.FormEmpresa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -222,15 +218,15 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Button btnMaximizar;
+        private System.Windows.Forms.Label lblOrganizerParking;
         private System.Windows.Forms.Button btnRestaurar;
+        private System.Windows.Forms.Button btnMaximizar;
+        private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnClientes;
-        private System.Windows.Forms.Panel panelConteudo;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFuncionario;
+        private System.Windows.Forms.Button btnEstacionamento;
+        private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panelConteudo;
     }
 }

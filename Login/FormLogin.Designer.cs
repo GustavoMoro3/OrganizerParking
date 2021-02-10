@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.label5 = new System.Windows.Forms.Label();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.lblPass = new System.Windows.Forms.Label();
             this.lbEsqueciSenha = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblRegister = new System.Windows.Forms.Label();
@@ -45,6 +42,9 @@
             this.ckeEmpresa = new System.Windows.Forms.CheckBox();
             this.ckeColaborador = new System.Windows.Forms.CheckBox();
             this.txtPass = new System.Windows.Forms.MaskedTextBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,43 +60,6 @@
             this.label5.Size = new System.Drawing.Size(410, 62);
             this.label5.TabIndex = 11;
             this.label5.Text = "Organizer Parking";
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblUser.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblUser.Location = new System.Drawing.Point(180, 192);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(79, 25);
-            this.lblUser.TabIndex = 12;
-            this.lblUser.Text = "Usuario";
-            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
-            // 
-            // txtUser
-            // 
-            this.txtUser.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(299, 191);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(337, 30);
-            this.txtUser.TabIndex = 13;
-            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
-            // 
-            // lblPass
-            // 
-            this.lblPass.AutoSize = true;
-            this.lblPass.BackColor = System.Drawing.Color.Transparent;
-            this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPass.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblPass.Location = new System.Drawing.Point(184, 254);
-            this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(70, 25);
-            this.lblPass.TabIndex = 15;
-            this.lblPass.Text = "Senha";
-            this.lblPass.Click += new System.EventHandler(this.lblPass_Click);
             // 
             // lbEsqueciSenha
             // 
@@ -254,13 +217,50 @@
             this.txtPass.TabIndex = 24;
             this.txtPass.UseSystemPasswordChar = true;
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblUsuario.Location = new System.Drawing.Point(184, 191);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(79, 25);
+            this.lblUsuario.TabIndex = 25;
+            this.lblUsuario.Text = "Usuario";
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSenha.Location = new System.Drawing.Point(193, 253);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(70, 25);
+            this.lblSenha.TabIndex = 26;
+            this.lblSenha.Text = "Senha";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(299, 191);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(337, 30);
+            this.txtUsuario.TabIndex = 27;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OrganizerParking.Properties.Resources.azzolinadvogados_com_br_responsabilidade_fornecedor_veiculos_no_estacionamento_3375_01;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(845, 472);
+            this.ClientSize = new System.Drawing.Size(845, 471);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.ckeColaborador);
             this.Controls.Add(this.ckeEmpresa);
@@ -269,9 +269,6 @@
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lbEsqueciSenha);
-            this.Controls.Add(this.txtUser);
-            this.Controls.Add(this.lblPass);
-            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -287,9 +284,6 @@
 
         #endregion
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblUser;
-        private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.LinkLabel lbEsqueciSenha;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblRegister;
@@ -302,6 +296,9 @@
         private System.Windows.Forms.CheckBox ckeEmpresa;
         private System.Windows.Forms.CheckBox ckeColaborador;
         private System.Windows.Forms.MaskedTextBox txtPass;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.TextBox txtUsuario;
     }
 }
 

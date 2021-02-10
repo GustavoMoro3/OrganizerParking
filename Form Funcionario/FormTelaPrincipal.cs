@@ -35,6 +35,9 @@ namespace OrganizerParking
             btnMaximizar.Visible = true;
         }
 
+
+
+
         private void panelConteudo_Paint(object sender, PaintEventArgs e)
         {
 
@@ -63,43 +66,36 @@ namespace OrganizerParking
                 }
             }
 
-        private void btnClientes_Click(object sender, EventArgs e)
+
+
+
+        private void btnPerfil_Click(object sender, EventArgs e)
         {
             AbrirFormNoPanel<FormPerfil>();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnVagas_Click(object sender, EventArgs e)
         {
             AbrirFormNoPanel<FormVagas>();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnCaronas_Click(object sender, EventArgs e)
         {
+            AbrirFormNoPanel<FormCarona>();
+        }
+
+        private void btnSairPrincipal_Click(object sender, EventArgs e)
+        {
+
             FormTelaPrincipal f2 = new FormTelaPrincipal();
             FormLogin f1 = new FormLogin();
             f1.Show();
             this.Close();
             f2.FindForm();
             f2.Hide();
-            
-
-
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            AbrirFormNoPanel<FormCarona>();
-        }
+       
     }
 }

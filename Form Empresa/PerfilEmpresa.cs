@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace OrganizerParking
 {
-    public partial class FormPerfil : Form
+    public partial class PerfilEmpresa : Form
     {
-        public FormPerfil()
+        public PerfilEmpresa()
         {
             InitializeComponent();
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
