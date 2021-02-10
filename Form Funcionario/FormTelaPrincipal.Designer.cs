@@ -182,7 +182,7 @@
             this.btnVagas.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVagas.ForeColor = System.Drawing.Color.Black;
             this.btnVagas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVagas.Location = new System.Drawing.Point(0, 136);
+            this.btnVagas.Location = new System.Drawing.Point(0, 142);
             this.btnVagas.Name = "btnVagas";
             this.btnVagas.Size = new System.Drawing.Size(200, 39);
             this.btnVagas.TabIndex = 2;

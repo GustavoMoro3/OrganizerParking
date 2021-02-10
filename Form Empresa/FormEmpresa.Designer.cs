@@ -155,6 +155,7 @@
             this.btnFuncionario.TabIndex = 9;
             this.btnFuncionario.Text = "Funcionário";
             this.btnFuncionario.UseVisualStyleBackColor = true;
+            this.btnFuncionario.Click += new System.EventHandler(this.btnFuncionario_Click);
             // 
             // btnEstacionamento
             // 
@@ -170,6 +171,7 @@
             this.btnEstacionamento.TabIndex = 8;
             this.btnEstacionamento.Text = "Estacionamento";
             this.btnEstacionamento.UseVisualStyleBackColor = true;
+            this.btnEstacionamento.Click += new System.EventHandler(this.btnEstacionamento_Click);
             // 
             // btnPerfil
             // 

@@ -84,5 +84,15 @@ namespace OrganizerParking
         {
             AbrirFormNoPanel<PerfilEmpresa>();
         }
+
+        private void btnEstacionamento_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPanel<Estacionamento>();
+        }
+
+        private void btnFuncionario_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPanel<Estacionamento>();
+        }
     }
 }

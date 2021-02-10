@@ -61,6 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form Empresa\Estacionamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Empresa\Estacionamento.Designer.cs">
+      <DependentUpon>Estacionamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Empresa\Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Empresa\Funcionario.Designer.cs">
+      <DependentUpon>Funcionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form Empresa\Estacionamento.resx">
+      <DependentUpon>Estacionamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Empresa\Funcionario.resx">
+      <DependentUpon>Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
