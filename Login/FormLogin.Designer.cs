@@ -216,6 +216,7 @@
             this.txtPass.Size = new System.Drawing.Size(337, 30);
             this.txtPass.TabIndex = 24;
             this.txtPass.UseSystemPasswordChar = true;
+            this.txtPass.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtPass_MaskInputRejected);
             // 
             // lblUsuario
             // 
