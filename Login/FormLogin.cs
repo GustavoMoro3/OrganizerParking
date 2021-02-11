@@ -14,7 +14,7 @@ namespace OrganizerParking
     public partial class FormLogin : Form
     {
        
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Gustavo\Source\Repos\OrganizerParking\BDCadastro.mdf;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\William\Source\Repos\Gustavolego41\OrganizerParking1\BDCadastro.mdf;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
 
         public FormLogin()
