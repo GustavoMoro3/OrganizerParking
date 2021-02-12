@@ -39,7 +39,7 @@ namespace OrganizerParking
                 SqlDataReader dr;
 
                 dr = cmd.ExecuteReader();
-                //
+                ////
                 while (dr.Read())
                 {
                     if (Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"])==txtPass.Text)
