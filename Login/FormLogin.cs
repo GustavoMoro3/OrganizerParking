@@ -13,7 +13,7 @@ namespace OrganizerParking
 {
     public partial class FormLogin : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\suporte\Source\Repos\Gustavolego41\OrganizerParking\Database1.mdf; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\suporte\source\repos\bdtesteteste\Database1.mdf;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
 
 
