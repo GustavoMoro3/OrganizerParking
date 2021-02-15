@@ -92,7 +92,17 @@ namespace OrganizerParking
 
         private void btnFuncionario_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<Estacionamento>();
+            AbrirFormNoPanel<Funcionario>();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormEmpresa f2 = new FormEmpresa();
+            FormLogin f1 = new FormLogin();
+            f1.Show();
+            this.Close();
+            f2.FindForm();
+            f2.Hide();
         }
     }
 }
