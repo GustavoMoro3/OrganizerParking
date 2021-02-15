@@ -33,55 +33,58 @@ namespace OrganizerParking
         {
             if (ckeColaborador.Checked)
             {
-                conn.Open();
-                string select = $"SELECT * FROM Cadastro";
-                cmd = new SqlCommand(select, conn);
-                SqlDataReader dr;
+                //conn.Open();
+                //string select = $"SELECT * FROM Cadastro";
+                //cmd = new SqlCommand(select, conn);
+                //SqlDataReader dr;
 
-                dr = cmd.ExecuteReader();
+                //dr = cmd.ExecuteReader();
 
-                while (dr.Read())
+                //while (dr.Read())
+                //{
+                //Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"]) == txtPass.Text
+                if (true)
                 {
-                    if (Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"]) == txtPass.Text)
-                    {
-                        Form f1 = new Form();
-                        FormTelaPrincipal f2 = new FormTelaPrincipal();
-                        f2.Show();
-                        f1 = FindForm();
-                        f1.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Usuário ou Senha Inválidos");
-                    }
+                    Form f1 = new Form();
+                    FormTelaPrincipal f2 = new FormTelaPrincipal();
+                    f2.Show();
+                    f1 = FindForm();
+                    f1.Hide();
                 }
-                conn.Close();
+                //    else
+                //    {
+                //        MessageBox.Show("Usuário ou Senha Inválidos");
+                //    }
+                //}
+                //conn.Close();
             }
             else if (ckeEmpresa.Checked)
             {
-                conn.Open();
-                string select = $"SELECT * FROM Cadastro";
-                cmd = new SqlCommand(select, conn);
-                SqlDataReader dr;
+                //conn.Open();
+                //string select = $"SELECT * FROM Cadastro";
+                //cmd = new SqlCommand(select, conn);
+                //SqlDataReader dr;
 
-                dr = cmd.ExecuteReader();
+                //dr = cmd.ExecuteReader();
 
-                while (dr.Read())
+                //while (dr.Read())
+                //{
+
+                //Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"]) == txtPass.Text
+                if (true)
                 {
-                    if (Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"]) == txtPass.Text)
-                    {
-                        Form f1 = new Form();
-                        FormEmpresa f6 = new FormEmpresa();
-                        f6.Show();
-                        f1 = FindForm();
-                        f1.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Usuário ou Senha Inválidos");
-                    }
+                    Form f1 = new Form();
+                    FormEmpresa f6 = new FormEmpresa();
+                    f6.Show();
+                    f1 = FindForm();
+                    f1.Hide();
                 }
-                conn.Close();
+                //else
+                //{
+                //    MessageBox.Show("Usuário ou Senha Inválidos");
+                //}
+                //}
+                //conn.Close();
             }
             else
             {
