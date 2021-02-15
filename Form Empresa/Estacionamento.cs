@@ -12,9 +12,18 @@ namespace OrganizerParking
 {
     public partial class Estacionamento : Form
     {
+        
         public Estacionamento()
         {
             InitializeComponent();
+        }
+
+        private void btnVagas_Click(object sender, EventArgs e)
+        {
+            int[] quantidadeVagas = new int[Convert.ToInt32(txtVagas.Text)];
+
+
+            
         }
     }
 }
