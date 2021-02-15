@@ -250,6 +250,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(337, 30);
             this.txtUsuario.TabIndex = 27;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // FormLogin
             // 

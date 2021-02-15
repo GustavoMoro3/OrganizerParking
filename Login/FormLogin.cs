@@ -42,8 +42,8 @@ namespace OrganizerParking
 
                 while (dr.Read())
                 {
-                    if (Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"])==txtPass.Text)
-                    {            
+                    if (Convert.ToString(dr["Usuario"]) == txtUsuario.Text && Convert.ToString(dr["Senha"]) == txtPass.Text)
+                    {
                         Form f1 = new Form();
                         FormTelaPrincipal f2 = new FormTelaPrincipal();
                         f2.Show();
@@ -55,9 +55,9 @@ namespace OrganizerParking
                         MessageBox.Show("Usuário ou Senha Inválidos");
                     }
                 }
-                conn.Close();              
+                conn.Close();
             }
-            else if(ckeEmpresa.Checked)
+            else if (ckeEmpresa.Checked)
             {
                 conn.Open();
                 string select = $"SELECT * FROM Cadastro";
@@ -86,7 +86,7 @@ namespace OrganizerParking
             else
             {
                 MessageBox.Show("Marque entre Colaborador e Empresa");
-            }                
+            }
         }
 
 
@@ -118,6 +118,11 @@ namespace OrganizerParking
 
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
 
         }
