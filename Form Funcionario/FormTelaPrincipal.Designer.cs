@@ -59,10 +59,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(40, 1);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 25);
+            this.label2.Size = new System.Drawing.Size(275, 34);
             this.label2.TabIndex = 5;
             this.label2.Text = "Organizer Parking";
             // 
@@ -121,7 +121,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 37);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(198, 563);
+            this.panel2.Size = new System.Drawing.Size(205, 563);
             this.panel2.TabIndex = 1;
             // 
             // btnPerfil
@@ -129,12 +129,12 @@
             this.btnPerfil.FlatAppearance.BorderSize = 0;
             this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerfil.Font = new System.Drawing.Font("MS Reference Sans Serif", 19F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerfil.ForeColor = System.Drawing.Color.Black;
             this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPerfil.Location = new System.Drawing.Point(0, 77);
+            this.btnPerfil.Location = new System.Drawing.Point(3, 147);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(200, 39);
+            this.btnPerfil.Size = new System.Drawing.Size(195, 40);
             this.btnPerfil.TabIndex = 3;
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.UseVisualStyleBackColor = true;
@@ -145,12 +145,12 @@
             this.btnSairPrincipal.FlatAppearance.BorderSize = 0;
             this.btnSairPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
             this.btnSairPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSairPrincipal.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSairPrincipal.Font = new System.Drawing.Font("MS Reference Sans Serif", 19F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSairPrincipal.ForeColor = System.Drawing.Color.Black;
             this.btnSairPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSairPrincipal.Location = new System.Drawing.Point(3, 263);
+            this.btnSairPrincipal.Location = new System.Drawing.Point(3, 301);
             this.btnSairPrincipal.Name = "btnSairPrincipal";
-            this.btnSairPrincipal.Size = new System.Drawing.Size(200, 39);
+            this.btnSairPrincipal.Size = new System.Drawing.Size(195, 40);
             this.btnSairPrincipal.TabIndex = 4;
             this.btnSairPrincipal.Text = "Sair";
             this.btnSairPrincipal.UseVisualStyleBackColor = true;
@@ -161,12 +161,12 @@
             this.btnCaronas.FlatAppearance.BorderSize = 0;
             this.btnCaronas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
             this.btnCaronas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaronas.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCaronas.Font = new System.Drawing.Font("MS Reference Sans Serif", 19F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaronas.ForeColor = System.Drawing.Color.Black;
             this.btnCaronas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaronas.Location = new System.Drawing.Point(3, 182);
+            this.btnCaronas.Location = new System.Drawing.Point(3, 224);
             this.btnCaronas.Name = "btnCaronas";
-            this.btnCaronas.Size = new System.Drawing.Size(200, 39);
+            this.btnCaronas.Size = new System.Drawing.Size(195, 40);
             this.btnCaronas.TabIndex = 3;
             this.btnCaronas.Text = "Caronas";
             this.btnCaronas.UseVisualStyleBackColor = true;
@@ -176,10 +176,10 @@
             // 
             this.panelConteudo.BackColor = System.Drawing.SystemColors.Control;
             this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelConteudo.Location = new System.Drawing.Point(198, 37);
-            this.panelConteudo.MaximumSize = new System.Drawing.Size(1000, 560);
+            this.panelConteudo.Location = new System.Drawing.Point(205, 37);
+            this.panelConteudo.MaximumSize = new System.Drawing.Size(1010, 570);
             this.panelConteudo.Name = "panelConteudo";
-            this.panelConteudo.Size = new System.Drawing.Size(1000, 560);
+            this.panelConteudo.Size = new System.Drawing.Size(995, 563);
             this.panelConteudo.TabIndex = 3;
             this.panelConteudo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelConteudo_Paint);
             // 
