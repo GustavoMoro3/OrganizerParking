@@ -92,13 +92,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 414);
+            this.ClientSize = new System.Drawing.Size(1000, 560);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblAdd);
             this.Controls.Add(this.btnFuncionario);
             this.Controls.Add(this.lblFuncionario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1000, 560);
             this.Name = "Funcionario";
             this.Text = "Funcionario";
             this.ResumeLayout(false);

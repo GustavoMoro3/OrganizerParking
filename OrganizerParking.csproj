@@ -91,12 +91,6 @@
     <Compile Include="Form Funcionario\FormPerfil.Designer.cs">
       <DependentUpon>FormPerfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form Funcionario\FormVagas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form Funcionario\FormVagas.Designer.cs">
-      <DependentUpon>FormVagas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form Funcionario\FormCarona.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form Funcionario\FormPerfil.resx">
       <DependentUpon>FormPerfil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form Funcionario\FormVagas.resx">
-      <DependentUpon>FormVagas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Funcionario\FormCarona.resx">
       <DependentUpon>FormCarona.cs</DependentUpon>

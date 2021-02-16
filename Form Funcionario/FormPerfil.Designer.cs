@@ -36,6 +36,8 @@
             this.lblempresa = new System.Windows.Forms.Label();
             this.lblcargo = new System.Windows.Forms.Label();
             this.lblnome = new System.Windows.Forms.Label();
+            this.lblVaga = new System.Windows.Forms.Label();
+            this.lblVagainformacao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Perfil
@@ -117,12 +119,33 @@
             this.lblnome.TabIndex = 7;
             this.lblnome.Text = "Nome:";
             // 
+            // lblVaga
+            // 
+            this.lblVaga.AutoSize = true;
+            this.lblVaga.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVaga.Location = new System.Drawing.Point(14, 312);
+            this.lblVaga.Name = "lblVaga";
+            this.lblVaga.Size = new System.Drawing.Size(77, 31);
+            this.lblVaga.TabIndex = 10;
+            this.lblVaga.Text = "Vaga";
+            // 
+            // lblVagainformacao
+            // 
+            this.lblVagainformacao.AutoSize = true;
+            this.lblVagainformacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVagainformacao.Location = new System.Drawing.Point(97, 312);
+            this.lblVagainformacao.Name = "lblVagainformacao";
+            this.lblVagainformacao.Size = new System.Drawing.Size(0, 31);
+            this.lblVagainformacao.TabIndex = 11;
+            // 
             // FormPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(642, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 560);
+            this.Controls.Add(this.lblVagainformacao);
+            this.Controls.Add(this.lblVaga);
             this.Controls.Add(this.lblempresa);
             this.Controls.Add(this.lblcargo);
             this.Controls.Add(this.lblnome);
@@ -132,6 +155,7 @@
             this.Controls.Add(this.lblPerfilMostrar);
             this.Controls.Add(this.Perfil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1000, 560);
             this.Name = "FormPerfil";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -150,5 +174,7 @@
         private System.Windows.Forms.Label lblempresa;
         private System.Windows.Forms.Label lblcargo;
         private System.Windows.Forms.Label lblnome;
+        private System.Windows.Forms.Label lblVaga;
+        private System.Windows.Forms.Label lblVagainformacao;
     }
 }

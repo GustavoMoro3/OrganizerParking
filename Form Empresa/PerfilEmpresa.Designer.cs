@@ -68,11 +68,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 416);
+            this.ClientSize = new System.Drawing.Size(1000, 560);
             this.Controls.Add(this.lblPerfilClick);
             this.Controls.Add(this.lblMensagem);
             this.Controls.Add(this.lblPerfil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1000, 560);
             this.Name = "PerfilEmpresa";
             this.Text = "PerfilEmpresa";
             this.ResumeLayout(false);

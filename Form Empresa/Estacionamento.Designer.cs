@@ -76,12 +76,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 418);
+            this.ClientSize = new System.Drawing.Size(1000, 560);
             this.Controls.Add(this.btnVagas);
             this.Controls.Add(this.txtVagas);
             this.Controls.Add(this.lblVagas);
             this.Controls.Add(this.lblEstacionamento);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1000, 560);
             this.Name = "Estacionamento";
             this.Text = "Estacionamento";
             this.ResumeLayout(false);

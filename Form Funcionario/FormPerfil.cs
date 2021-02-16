@@ -38,6 +38,10 @@ namespace OrganizerParking
             lblcargoinformacao.Text = "Funcionario Normal";
             lblnomeinformacao.Text = "Josias de Santos";
             lblempresainformacao.Text = "1KM";
+            string vaga = "35";
+            lblVagainformacao.Text = vaga;
         }
+
+       
     }
 }

@@ -75,10 +75,7 @@ namespace OrganizerParking
         }
 
 
-        private void btnVagas_Click(object sender, EventArgs e)
-        {
-            AbrirFormNoPanel<FormVagas>();
-        }
+       
 
         private void btnCaronas_Click(object sender, EventArgs e)
         {

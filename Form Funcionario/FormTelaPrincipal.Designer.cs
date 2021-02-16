@@ -38,7 +38,6 @@
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnSairPrincipal = new System.Windows.Forms.Button();
             this.btnCaronas = new System.Windows.Forms.Button();
-            this.btnVagas = new System.Windows.Forms.Button();
             this.panelConteudo = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -54,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 37);
+            this.panel1.Size = new System.Drawing.Size(1200, 37);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -76,7 +75,7 @@
             this.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(656, 3);
+            this.btnRestaurar.Location = new System.Drawing.Point(1056, 3);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(40, 31);
             this.btnRestaurar.TabIndex = 4;
@@ -91,7 +90,7 @@
             this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(702, 1);
+            this.btnMaximizar.Location = new System.Drawing.Point(1102, 1);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(40, 34);
             this.btnMaximizar.TabIndex = 3;
@@ -106,7 +105,7 @@
             this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.Image")));
-            this.btnFechar.Location = new System.Drawing.Point(748, 1);
+            this.btnFechar.Location = new System.Drawing.Point(1148, 1);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(40, 34);
             this.btnFechar.TabIndex = 2;
@@ -119,11 +118,10 @@
             this.panel2.Controls.Add(this.btnPerfil);
             this.panel2.Controls.Add(this.btnSairPrincipal);
             this.panel2.Controls.Add(this.btnCaronas);
-            this.panel2.Controls.Add(this.btnVagas);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 37);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 413);
+            this.panel2.Size = new System.Drawing.Size(198, 563);
             this.panel2.TabIndex = 1;
             // 
             // btnPerfil
@@ -150,7 +148,7 @@
             this.btnSairPrincipal.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSairPrincipal.ForeColor = System.Drawing.Color.Black;
             this.btnSairPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSairPrincipal.Location = new System.Drawing.Point(3, 286);
+            this.btnSairPrincipal.Location = new System.Drawing.Point(3, 263);
             this.btnSairPrincipal.Name = "btnSairPrincipal";
             this.btnSairPrincipal.Size = new System.Drawing.Size(200, 39);
             this.btnSairPrincipal.TabIndex = 4;
@@ -166,7 +164,7 @@
             this.btnCaronas.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaronas.ForeColor = System.Drawing.Color.Black;
             this.btnCaronas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaronas.Location = new System.Drawing.Point(3, 212);
+            this.btnCaronas.Location = new System.Drawing.Point(3, 182);
             this.btnCaronas.Name = "btnCaronas";
             this.btnCaronas.Size = new System.Drawing.Size(200, 39);
             this.btnCaronas.TabIndex = 3;
@@ -174,29 +172,14 @@
             this.btnCaronas.UseVisualStyleBackColor = true;
             this.btnCaronas.Click += new System.EventHandler(this.btnCaronas_Click);
             // 
-            // btnVagas
-            // 
-            this.btnVagas.FlatAppearance.BorderSize = 0;
-            this.btnVagas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.btnVagas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVagas.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVagas.ForeColor = System.Drawing.Color.Black;
-            this.btnVagas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVagas.Location = new System.Drawing.Point(0, 142);
-            this.btnVagas.Name = "btnVagas";
-            this.btnVagas.Size = new System.Drawing.Size(200, 39);
-            this.btnVagas.TabIndex = 2;
-            this.btnVagas.Text = "Vagas";
-            this.btnVagas.UseVisualStyleBackColor = true;
-            this.btnVagas.Click += new System.EventHandler(this.btnVagas_Click);
-            // 
             // panelConteudo
             // 
             this.panelConteudo.BackColor = System.Drawing.SystemColors.Control;
             this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelConteudo.Location = new System.Drawing.Point(200, 37);
+            this.panelConteudo.Location = new System.Drawing.Point(198, 37);
+            this.panelConteudo.MaximumSize = new System.Drawing.Size(1000, 560);
             this.panelConteudo.Name = "panelConteudo";
-            this.panelConteudo.Size = new System.Drawing.Size(600, 413);
+            this.panelConteudo.Size = new System.Drawing.Size(1000, 560);
             this.panelConteudo.TabIndex = 3;
             this.panelConteudo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelConteudo_Paint);
             // 
@@ -205,12 +188,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Controls.Add(this.panelConteudo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTelaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Organizer Parking";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -230,7 +215,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSairPrincipal;
         private System.Windows.Forms.Button btnCaronas;
-        private System.Windows.Forms.Button btnVagas;
         private System.Windows.Forms.Button btnPerfil;
     }
 }
